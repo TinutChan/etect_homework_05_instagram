@@ -1,3 +1,4 @@
+import 'package:etect_homework_05_instagram/widgets/favourite_widgets/profile_detail.dart';
 import 'package:flutter/material.dart';
 
 class Favourite extends StatelessWidget {
@@ -12,28 +13,7 @@ class Favourite extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 20),
-            child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Text(
-                    'alisesmith',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(right: 15),
-                    height: 40,
-                    width: 40,
-                    decoration: const BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: DecorationImage(
-                          image: AssetImage('assets/stories1.jpg'),
-                          fit: BoxFit.cover),
-                    ),
-                  ),
-                ]),
-          )
+          Detail(),
         ],
       ),
     );
