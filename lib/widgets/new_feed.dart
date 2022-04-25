@@ -43,7 +43,7 @@ class NewFeed extends StatelessWidget {
                       ),
                     ),
                     child: Container(
-                      padding: EdgeInsets.all(0.1),
+                      padding: const EdgeInsets.all(0.1),
                       height: 45,
                       width: 45,
                       decoration: const BoxDecoration(
@@ -59,7 +59,7 @@ class NewFeed extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(1.0),
                         child: Container(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           width: 45,
                           height: 45,
                           decoration: BoxDecoration(
@@ -74,7 +74,7 @@ class NewFeed extends StatelessWidget {
                   ),
                   Text(
                     '$username',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   const Spacer(),
                   const Icon(Icons.more_horiz_outlined),

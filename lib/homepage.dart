@@ -6,7 +6,7 @@ import 'package:etect_homework_05_instagram/screens/search.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
           onTap: _navigationBottomBar,
           currentIndex: _selectedItem,
           type: BottomNavigationBarType.fixed,
-          selectedIconTheme: IconThemeData(color: Colors.black),
+          selectedIconTheme: const IconThemeData(color: Colors.black),
           selectedFontSize: 0,
           items: const [
             BottomNavigationBarItem(

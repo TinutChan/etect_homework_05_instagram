@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
         ),
         actions: const [
           Padding(
-            padding: const EdgeInsets.all(15.0),
+            padding: EdgeInsets.all(15.0),
             child: Icon(
               Icons.send,
               color: Colors.black,
@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               child: Row(
                 children: const [
                   Text(
@@ -61,7 +61,7 @@ class Home extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 15),
+              padding: const EdgeInsets.only(left: 15),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Wrap(
