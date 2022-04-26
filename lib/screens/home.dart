@@ -1,5 +1,4 @@
 import 'package:etect_homework_05_instagram/models/new_feed_items.dart';
-import 'package:etect_homework_05_instagram/screens/instagram.dart';
 import 'package:etect_homework_05_instagram/widgets/new_feed.dart';
 import 'package:etect_homework_05_instagram/widgets/stories_widgets.dart';
 import 'package:flutter/material.dart';

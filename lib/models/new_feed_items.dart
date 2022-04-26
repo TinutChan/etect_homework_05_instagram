@@ -22,7 +22,7 @@ List<NewFeed> newfeed_list = [
       profilePhoto: 'assets/stories1.jpg',
       username: 'westley.winder'),
   const NewFeed(
-      newfeedPhoto: 'assets/stories1.jpg',
-      profilePhoto: 'assets/stories1.jpg',
-      username: 'westley.winder'),
+      newfeedPhoto: 'assets/photo1.jpg',
+      profilePhoto: 'assets/photo2.jpg',
+      username: 'sorn.natib'),
 ];

@@ -120,7 +120,7 @@ class NewFeed extends StatelessWidget {
                   Text('Hi!'),
                   SizedBox(width: 10),
                   Text(
-                    'marinad',
+                    '#marinad',
                     style: TextStyle(color: Colors.blue),
                   ),
                 ],
