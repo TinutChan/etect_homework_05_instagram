@@ -74,6 +74,8 @@ class Detail extends StatelessWidget {
             height: 20,
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Expanded(
                 flex: 4,
@@ -84,7 +86,13 @@ class Detail extends StatelessWidget {
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: ElevatedButton(
-                    style: ButtonStyle(),
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
+                    ),
                     onPressed: () {},
                     child: const Text('Send Message'),
                   ),
@@ -100,16 +108,31 @@ class Detail extends StatelessWidget {
                     borderRadius: BorderRadius.circular(25),
                   ),
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          side: const BorderSide(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
+                    ),
                     onPressed: () {},
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
                           Icons.person,
+                          color: Colors.black,
                           size: 20,
+                        ),
+                        SizedBox(
+                          width: 5,
                         ),
                         Icon(
                           Icons.check,
+                          color: Colors.black,
                           size: 20,
                         )
                       ],
@@ -124,7 +147,20 @@ class Detail extends StatelessWidget {
                 child: Container(
                   height: 30,
                   child: ElevatedButton(
-                    child: Icon(Icons.arrow_drop_down),
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          side: const BorderSide(color: Colors.grey),
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
+                    ),
+                    child: const Icon(
+                      Icons.arrow_drop_down,
+                      color: Colors.black,
+                    ),
                     onPressed: () {},
                   ),
                 ),
