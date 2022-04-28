@@ -24,8 +24,8 @@ class _HomePageState extends State<HomePage> {
     const Home(),
     const Search(),
     const Instagram(),
-    const Favourite(),
     const Profile(),
+    const Favourite(),
   ];
   @override
   Widget build(BuildContext context) {
