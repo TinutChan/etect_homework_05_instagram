@@ -1,9 +1,5 @@
-import '../widgets/favourite_widgets/components/grid_view.dart';
+import '../widgets/favourite_widgets/tab_bar.dart';
 
-List<GridviewWidgets> Gridviews_Items = [
-  const GridviewWidgets(images: 'assets/stories1.jpg'),
-  // const GridviewWidgets(images: 'assets/stories1.jpg'),
-  // const GridviewWidgets(images: 'assets/stories1.jpg'),
-  // const GridviewWidgets(images: 'assets/stories1.jpg'),
-  // const GridviewWidgets(images: 'assets/stories1.jpg'),
+List<TabBar_Widgets> Gridviews_Items = [
+  const TabBar_Widgets(images: 'assets/stories1.jpg'),
 ];
