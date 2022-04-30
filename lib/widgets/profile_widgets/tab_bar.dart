@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../../models/grid_view_photo_list.dart';
-
 class TabBar_Widgets extends StatelessWidget {
   final String? images;
   const TabBar_Widgets({Key? key, this.images}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    List<TabBar_Widgets> assets_list = [
+      const TabBar_Widgets(
+        images: 'assets/stories1.jpg',
+      )
+    ];
     return Container(
       child: DefaultTabController(
         length: 4,
@@ -37,7 +40,7 @@ class TabBar_Widgets extends StatelessWidget {
               ),
             ),
             Container(
-              height: 350,
+              height: 400,
               decoration: const BoxDecoration(
                 border: Border(
                   top: BorderSide(color: Colors.grey, width: 0.5),
@@ -45,9 +48,9 @@ class TabBar_Widgets extends StatelessWidget {
               ),
               child: TabBarView(children: <Widget>[
                 GridView.builder(
-                  primary: false,
                   shrinkWrap: true,
-                  itemCount: Gridviews_Items.length,
+                  scrollDirection: Axis.vertical,
+                  itemCount: 12,
                   padding: EdgeInsets.zero,
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
@@ -55,7 +58,7 @@ class TabBar_Widgets extends StatelessWidget {
                       mainAxisSpacing: 1),
                   itemBuilder: (Context, int index) {
                     return Container(
-                      padding: const EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(8.0),
                       decoration: BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage('$images'), fit: BoxFit.cover),

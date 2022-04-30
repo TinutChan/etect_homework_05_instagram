@@ -1,7 +1,7 @@
-import 'package:etect_homework_05_instagram/screens/favourite.dart';
+import 'package:etect_homework_05_instagram/screens/profile.dart';
 import 'package:etect_homework_05_instagram/screens/home.dart';
 import 'package:etect_homework_05_instagram/screens/instagram.dart';
-import 'package:etect_homework_05_instagram/screens/profile.dart';
+import 'package:etect_homework_05_instagram/screens/fav.dart';
 import 'package:etect_homework_05_instagram/screens/search.dart';
 import 'package:flutter/material.dart';
 
