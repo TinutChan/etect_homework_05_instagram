@@ -1,3 +1,4 @@
+import 'package:etect_homework_05_instagram/widgets/profile/image_view.dart';
 import 'package:flutter/material.dart';
 
 class TabBar_Widgets extends StatelessWidget {
@@ -6,15 +7,15 @@ class TabBar_Widgets extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<TabBar_Widgets> assets_list = [
+    List<TabBar_Widgets> assetsList = [
       const TabBar_Widgets(
         images: 'assets/stories1.jpg',
       )
     ];
-    return Container(
-      child: DefaultTabController(
-        length: 4,
-        initialIndex: 0,
+    return DefaultTabController(
+      length: 4,
+      initialIndex: 0,
+      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -40,52 +41,44 @@ class TabBar_Widgets extends StatelessWidget {
               ),
             ),
             Container(
-              height: 400,
+             height:MediaQuery.of(context).size.height*0.51,
               decoration: const BoxDecoration(
                 border: Border(
                   top: BorderSide(color: Colors.grey, width: 0.5),
                 ),
               ),
-              child: TabBarView(children: <Widget>[
-                GridView.builder(
-                  shrinkWrap: true,
-                  scrollDirection: Axis.vertical,
-                  itemCount: 12,
-                  padding: EdgeInsets.zero,
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
-                      crossAxisSpacing: 1,
-                      mainAxisSpacing: 1),
-                  itemBuilder: (Context, int index) {
-                    return Container(
-                      padding: const EdgeInsets.all(8.0),
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('$images'), fit: BoxFit.cover),
-                      ),
-                    );
-                  },
-                ),
-                Container(
-                  child: const Center(
-                    child: Text('Display Tab 2',
-                        style: TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold)),
+              child: TabBarView(children:[
+             
+                SizedBox(
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.vertical,
+                    itemCount: 19,
+                    padding: EdgeInsets.zero,
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3,
+                        crossAxisSpacing: 1,
+                        mainAxisSpacing: 1),
+                    // ignore: non_constant_identifier_names
+                    itemBuilder: (Context, int index) {
+                      return const ImageView();
+                    },
                   ),
                 ),
-                Container(
-                  child: const Center(
-                    child: Text('Display Tab 3',
-                        style: TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold)),
-                  ),
+                const Center(
+                  child: Text('Display Tab 2',
+                      style: TextStyle(
+                          fontSize: 22, fontWeight: FontWeight.bold)),
                 ),
-                Container(
-                  child: const Center(
-                    child: Text('Display Tab 4',
-                        style: TextStyle(
-                            fontSize: 22, fontWeight: FontWeight.bold)),
-                  ),
+                const Center(
+                  child: Text('Display Tab 3',
+                      style: TextStyle(
+                          fontSize: 22, fontWeight: FontWeight.bold)),
+                ),
+                const Center(
+                  child: Text('Display Tab 4',
+                      style: TextStyle(
+                          fontSize: 22, fontWeight: FontWeight.bold)),
                 ),
               ]),
             ),

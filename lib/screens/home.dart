@@ -56,17 +56,27 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            Padding(
+            SingleChildScrollView(
               padding: const EdgeInsets.only(left: 15),
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Wrap(
-                    children: stories_list.map((e) {
-                  return Stories(
-                    photo: e.photo,
-                    text: e.text,
-                  );
-                }).toList()),
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  const Stories(isCheck: true,photo: 'assets/stories1.jpg',text: 'Your Story'),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 0),
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Wrap(
+                          children: stories_list.map((e) {
+                        return Stories(
+                          photo: e.photo,
+                          text: e.text,
+            
+                        );
+                      }).toList()),
+                    ),
+                  ),
+                ],
               ),
             ),
             Wrap(
