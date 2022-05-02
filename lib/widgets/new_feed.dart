@@ -15,6 +15,7 @@ class NewFeed extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Diviver
           const Divider(
             color: Colors.grey,
             height: 10,
@@ -27,8 +28,8 @@ class NewFeed extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  margin: const EdgeInsets.only(right: 10, left: 10),
-                  padding: const EdgeInsets.all(4.0),
+                  margin: const EdgeInsets.only(right: 10, left: 5.0),
+                  padding: const EdgeInsets.all(3.0),
                   height: 47,
                   width: 47,
                   decoration: const BoxDecoration(
@@ -43,15 +44,15 @@ class NewFeed extends StatelessWidget {
                     ),
                   ),
                   child: Container(
-                    padding: const EdgeInsets.all(0.1),
+                    padding: const EdgeInsets.all(1),
                     height: 45,
                     width: 45,
                     decoration:
                         const BoxDecoration(shape: BoxShape.circle, boxShadow: [
                       BoxShadow(
                         color: Colors.white,
-                        spreadRadius: 1,
-                        blurRadius: 1,
+                        spreadRadius: 0,
+                        blurRadius: 0,
                         offset: Offset(0.3, 0.3),
                       ),
                     ]),

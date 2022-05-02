@@ -30,37 +30,38 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _screens[_selectedItem],
-        bottomNavigationBar: BottomNavigationBar(
-          onTap: _navigationBottomBar,
-          currentIndex: _selectedItem,
-          type: BottomNavigationBarType.fixed,
-          selectedIconTheme: const IconThemeData(color: Colors.black),
-          selectedFontSize: 0,
-          items: const [
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.home,
-                ),
-                label: '',
-                activeIcon: Icon(Icons.home_filled)),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.search),
-                label: '',
-                activeIcon: Icon(Icons.search_rounded)),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.add_box_outlined),
-                label: '',
-                activeIcon: Icon(Icons.add_box)),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.favorite_outline),
-                label: '',
-                activeIcon: Icon(Icons.favorite)),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                label: '',
-                activeIcon: Icon(Icons.person)),
-          ],
-        ));
+      body: _screens[_selectedItem],
+      bottomNavigationBar: BottomNavigationBar(
+        onTap: _navigationBottomBar,
+        currentIndex: _selectedItem,
+        type: BottomNavigationBarType.fixed,
+        selectedIconTheme: const IconThemeData(color: Colors.black),
+        selectedFontSize: 0,
+        items: const [
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home,
+              ),
+              label: '',
+              activeIcon: Icon(Icons.home_filled)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: '',
+              activeIcon: Icon(Icons.search_rounded)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.add_box_outlined),
+              label: '',
+              activeIcon: Icon(Icons.add_box)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_outline),
+              label: '',
+              activeIcon: Icon(Icons.favorite)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: '',
+              activeIcon: Icon(Icons.person)),
+        ],
+      ),
+    );
   }
 }

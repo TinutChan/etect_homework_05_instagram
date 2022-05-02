@@ -52,7 +52,7 @@ class Home extends StatelessWidget {
                   Text(
                     'Watch all',
                     style: TextStyle(fontWeight: FontWeight.bold),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -61,7 +61,10 @@ class Home extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  const Stories(isCheck: true,photo: 'assets/stories1.jpg',text: 'Your Story'),
+                  const Stories(
+                      isCheck: true,
+                      photo: 'assets/stories1.jpg',
+                      text: 'Your Story'),
                   Padding(
                     padding: const EdgeInsets.only(left: 0),
                     child: SingleChildScrollView(
@@ -71,7 +74,6 @@ class Home extends StatelessWidget {
                         return Stories(
                           photo: e.photo,
                           text: e.text,
-            
                         );
                       }).toList()),
                     ),

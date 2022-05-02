@@ -109,6 +109,7 @@ class Detail extends StatelessWidget {
                   ),
                   child: ElevatedButton(
                     style: ButtonStyle(
+                      elevation: MaterialStateProperty.all(0.0),
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
@@ -148,6 +149,7 @@ class Detail extends StatelessWidget {
                   height: 30,
                   child: ElevatedButton(
                     style: ButtonStyle(
+                      elevation: MaterialStateProperty.all(0.0),
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
